@@ -5,9 +5,18 @@
   box-sizing: border-box;
   border: 1px solid gray;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #footer {
   text-align: right;
   width: 100%;
+  z-index: 50;
+  background: var(--navy);
+  margin-top: -1px;
+  padding: 1em;
+  box-sizing: border-box;
 }

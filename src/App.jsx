@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <BackgroundLayer />
+      <BackgroundLayer position="top" />
       <SiteHeader visibilityToggle={displayBlurb} />
       <BlurbDisplay />
 
@@ -27,6 +27,7 @@ function App() {
       </div>
 
       <div id="footer">©2023 Corrie Stroup</div>
+      <BackgroundLayer position="bottom" />
     </div>
   );
 }
