@@ -1,8 +1,15 @@
+/** SITE HEADER **/
+
 #site-header {
   display: flex;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   justify-content: space-between;
+  position: relative;
+  z-index: 50;
+  background-color: var(--navy);
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 #profile-picture {
@@ -12,6 +19,17 @@
 }
 
 #connect-box {
+  /* background-color: rgba(0, 144, 144, 0.5); */
+}
+
+#connect-box img {
+  filter: invert(65%);
+}
+
+#connect-box img:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  filter: invert(35%);
 }
 
 .connect-icon {
@@ -19,7 +37,74 @@
   height: 50px;
 }
 
+/** BLURB DISPLAY **/
+#blurb-container {
+  z-index: 50;
+  position: relative;
+  background-color: var(--navy);
+  padding: 2em;
+}
+
+.project-blurb {
+  margin-top: 1em;
+  border-left: 3px solid var(--light-green);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 1.5em;
+}
+
 .hidden {
-  scale: 0;
+  /* transform: translateX(1000%);
+  transition: 1s; */
   display: none;
+}
+
+.blurb {
+  height: fit-content;
+  min-height: 500px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  color: var(--light-green);
+}
+
+.blurb-transition {
+  transition: 0.5s;
+}
+
+/** PROJECT MENU **/
+
+#project-menu {
+  /* background-color: violet; */
+  border-left: 3px solid var(--light-green);
+  margin-left: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-decoration: underline;
+  width: fit-content;
+  list-style: none;
+}
+
+#project-menu li:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/** BACKGROUND LAYER **/
+
+#background-layer {
+  background: var(--light-green);
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

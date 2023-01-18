@@ -1,0 +1,13 @@
+.App {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 1.5em;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  position: relative;
+}
+
+#footer {
+  text-align: right;
+  width: 100%;
+}

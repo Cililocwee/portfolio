@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import BackgroundLayer from "./components/BackgroundLayer";
 import BlurbDisplay from "./components/BlurbDisplay";
 import ProjectMenu from "./components/ProjectMenu";
 import SiteHeader from "./components/SiteHeader";
@@ -17,13 +18,15 @@ function App() {
 
   return (
     <div className="App">
+      <BackgroundLayer />
       <SiteHeader visibilityToggle={displayBlurb} />
-
       <BlurbDisplay />
 
       <div id="project-menu-container">
         <ProjectMenu visibilityToggle={displayBlurb} />
       </div>
+
+      <div id="footer">©2023 Corrie Stroup</div>
     </div>
   );
 }
