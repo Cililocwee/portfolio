@@ -1,7 +1,7 @@
 .App {
   background-color: var(--navy);
-  color: var(--white);
-  padding: 1.5em;
+  color: var(--not-white);
+  padding: var(--variable-padding-small);
   box-sizing: border-box;
   border: 1px solid gray;
   position: relative;
@@ -19,4 +19,12 @@
   margin-top: -1px;
   padding: 1em;
   box-sizing: border-box;
+}
+
+.decorated-anchor {
+  color: var(--not-white);
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 3px solid var(--light-green);
+  padding-bottom: 0.5em;
 }

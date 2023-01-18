@@ -4,6 +4,7 @@
   --slate: #8892b0;
   --light-slate: #a8b2d1;
   --white: #e6f1ff;
+  --not-white: #d1d1d1;
   --border-radius: 6px;
 
   --dark-navy: #020c1b;
@@ -21,6 +22,25 @@
     ),
     linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+
+  --scale-in: 0.3s;
+  --scale-out: 0.75s;
+
+  --variable-padding-small: 0.5em;
+  --padding-medium: 1em;
+  --padding-large: 2em;
+}
+
+@media only screen and (min-width: 500px) {
+  :root {
+    --variable-padding-small: 1em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  :root {
+    --variable-padding-small: 2em;
+  }
 }
 
 html,

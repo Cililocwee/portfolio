@@ -8,7 +8,7 @@
   position: relative;
   z-index: 50;
   background-color: var(--navy);
-  padding: 25px;
+  padding: var(--variable-padding-small);
   box-sizing: border-box;
 }
 
@@ -16,6 +16,12 @@
   width: 75px;
   height: 75px;
   object-fit: cover;
+  transition: var(--scale-out);
+}
+
+#profile-picture:hover {
+  transform: scale(1.1);
+  transition: var(--scale-in);
 }
 
 #connect-box {
@@ -24,12 +30,13 @@
 
 #connect-box img {
   filter: invert(65%);
+  transition: var(--scale-out);
 }
 
 #connect-box img:hover {
-  transition: 0.5s;
+  transition: var(--scale-in);
   transform: scale(1.1);
-  filter: invert(35%);
+  filter: invert(100%);
 }
 
 .connect-icon {
@@ -42,8 +49,12 @@
   z-index: 50;
   position: relative;
   background-color: var(--navy);
-  padding: 2em;
-  height: 1fr;
+  padding: var(--padding-large);
+  height: fit-content;
+}
+@media only screen and (min-width: 500px) {
+  #blurb-container {
+  }
 }
 
 .project-blurb {
@@ -52,18 +63,19 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding-left: 1.5em;
+  padding-left: var(--padding-large);
 }
 
 .hidden {
-  /* transform: translateX(1000%);
-  transition: 1s; */
-  display: none;
+  transform: scaleX(0);
+  opacity: 0;
+  position: absolute;
 }
 
 .blurb {
+  transform-origin: right;
   height: fit-content;
-  min-height: 500px;
+  transition: opacity 0s, transform 0.5s;
 }
 
 .project-links {
@@ -78,6 +90,9 @@
 }
 
 /** PROJECT MENU **/
+#projects-label {
+}
+
 #project-menu-container {
   z-index: 50;
   background: var(--navy);
@@ -85,25 +100,45 @@
   height: fit-content;
   position: relative;
   margin-top: -1px;
+  padding: var(--padding-large);
 }
 
 #project-menu {
-  /* background-color: violet; */
-  border-left: 3px solid var(--light-green);
-  margin-left: 2em;
-  padding: 1em;
+  /* margin-left: 2em; */
+  margin-top: 2em;
+  padding: var(--padding-large);
   display: flex;
   flex-direction: column;
   gap: 1em;
-  text-decoration: underline;
   width: fit-content;
   list-style: none;
+  position: relative;
+  width: max-content;
+  box-sizing: border-box;
 }
 
-#project-menu li:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
+#project-menu::before {
+  position: absolute;
+  width: 33px;
+  height: 100%;
+  border-top-left-radius: var(--border-radius);
+  content: "";
+  left: 0;
+  top: 0;
+  border-left: 3px solid var(--light-green);
+  border-top: 3px solid var(--light-green);
+}
+
+#project-menu a {
+  box-sizing: border-box;
+  transition: 0.75s;
+  width: fit-content;
+}
+
+#project-menu a:hover {
+  letter-spacing: 1px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 /** BACKGROUND LAYER **/

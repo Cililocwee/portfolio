@@ -23,6 +23,7 @@ function App() {
       <BlurbDisplay />
 
       <div id="project-menu-container">
+        <h2 id="projects-label">Projects</h2>
         <ProjectMenu visibilityToggle={displayBlurb} />
       </div>
 
