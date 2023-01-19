@@ -4,12 +4,18 @@
   padding: var(--variable-padding-small);
   box-sizing: border-box;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 1080px;
-  max-height: 720px;
+  height: fit-content;
+}
+
+#page-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #layout-container {
@@ -22,6 +28,10 @@
 }
 
 @media only screen and (min-width: 700px) {
+  .App {
+    height: 100%;
+  }
+
   #layout-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
