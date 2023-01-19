@@ -3,12 +3,32 @@
   color: var(--not-white);
   padding: var(--variable-padding-small);
   box-sizing: border-box;
-  border: 1px solid gray;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 1080px;
+  max-height: 720px;
+}
+
+#layout-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navy);
+  z-index: 50;
+  flex-grow: 1;
+  align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+  #layout-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    flex-grow: 1;
+  }
 }
 
 #footer {

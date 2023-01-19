@@ -19,16 +19,20 @@ function App() {
   return (
     <div className="App">
       <BackgroundLayer position="top" />
-      <SiteHeader visibilityToggle={displayBlurb} />
-      <BlurbDisplay />
+      {/* <BackgroundLayer position="bottom" /> */}
 
-      <div id="project-menu-container">
-        <h2 id="projects-label">Projects</h2>
-        <ProjectMenu visibilityToggle={displayBlurb} />
+      <SiteHeader visibilityToggle={displayBlurb} />
+
+      <div id="layout-container">
+        <BlurbDisplay />
+
+        <div id="project-menu-container">
+          <h2 id="projects-label">Projects</h2>
+          <ProjectMenu visibilityToggle={displayBlurb} />
+        </div>
       </div>
 
       <div id="footer">©2023 Corrie Stroup</div>
-      <BackgroundLayer position="bottom" />
     </div>
   );
 }

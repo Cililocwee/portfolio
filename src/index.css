@@ -52,6 +52,19 @@ body,
   margin: 0;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: var(--navy);
+  /* overflow: hidden; */
+}
+
 h1,
 h2,
 h3,
