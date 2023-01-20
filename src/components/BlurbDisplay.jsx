@@ -3,13 +3,9 @@ import ProjectBlurb from "./ProjectBlurb";
 import projectList from "../projects/projectList";
 
 export default function BlurbDisplay() {
-  function displayActive(e) {
-    console.log(e.target.className);
-  }
-
   return (
     <div id="blurb-container">
-      <div id="welcome-blurb" className="blurb" onClick={displayActive}>
+      <div id="welcome-blurb" className="blurb">
         <h1>Howdy!</h1>
         <br />
         <p>

@@ -9,7 +9,6 @@ import LavaLamp from "./lavalamp/LavaLamp";
 function App() {
   function displayBlurb(blurb) {
     const blurbs = document.getElementsByClassName("blurb");
-    console.log(blurbs);
     for (let i = 0; i < blurbs.length; i++) {
       blurbs[i].classList.add("hidden");
     }

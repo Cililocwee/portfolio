@@ -30,7 +30,7 @@
 }
 
 #connect-box img {
-  filter: invert(65%);
+  filter: invert(75%);
   transition: var(--scale-out);
 }
 
