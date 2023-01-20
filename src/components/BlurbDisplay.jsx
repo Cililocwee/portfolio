@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import ProjectBlurb from "./ProjectBlurb";
 import projectList from "../projects/projectList";
 import Typed from "typed.js";
 
 export default function BlurbDisplay() {
-  const el = React.useRef(null);
-  const typed = React.useRef(null);
+  const el = useRef(null);
+  const typed = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const options = {
       strings: ["Xin chào!", "Grüß Gott!", "Howdy!"],
       typeSpeed: 50,
