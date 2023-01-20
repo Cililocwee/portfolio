@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePicture from "../assets/johnsmith.jpg";
+import ProfilePicture from "../assets/profilepicture.jpg";
 import GHIcon from "../assets/github.png";
 import LIIcon from "../assets/linkedin.png";
 import GMIcon from "../assets/gmail.png";

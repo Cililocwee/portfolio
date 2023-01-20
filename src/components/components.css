@@ -53,6 +53,12 @@
   padding: var(--padding-large);
   height: fit-content;
 }
+
+#blurb-container .highlight {
+  color: var(--light-green);
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 700px) {
   #blurb-container {
     grid-column: 1;

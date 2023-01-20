@@ -10,17 +10,25 @@ export default function BlurbDisplay() {
   return (
     <div id="blurb-container">
       <div id="welcome-blurb" className="blurb" onClick={displayActive}>
-        <h1>Howdy</h1>
+        <h1>Howdy!</h1>
+        <br />
         <p>
-          My name is Corrie Stroup, I'm a Frontend Developer based in Ho Chi
-          Minh City, Vietnam. I have developed a variety of different types of
-          front-end apps from clones of popular social media websites to
-          business UIs.
+          My name is <span className="highlight">Corrie Stroup</span>, I'm a
+          Frontend Developer based in Ho Chi Minh City, Vietnam. I have
+          developed a variety of different apps from reproductions of popular
+          social media websites to business UIs.
         </p>
+        <br />
         <p>
-          Expressive, creative front-ends are a passion of mine. Bleeding edge
+          <span className="highlight">Expressive, creative front-ends</span> are
+          a passion of mine. In a world increasingly technological, cutting-edge
           is where I like to be; the frontier of pixel-perfection and intuitive
           UX.
+        </p>
+        <br />
+        <p>
+          New stacks, old stacks, all stacks have a time and a place and provide
+          value in development.
         </p>
       </div>
       <div id="project-one-blurb" className="blurb hidden">

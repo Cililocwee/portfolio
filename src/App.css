@@ -49,6 +49,8 @@
   margin-top: -1px;
   padding: 1em;
   box-sizing: border-box;
+  font-family: var(--font-main);
+  color: var(--light-slate);
 }
 
 .decorated-anchor {
