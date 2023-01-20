@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectBlurb from "./ProjectBlurb";
 import projectList from "../projects/projectList";
+import Typed from "typed.js";
 
 export default function BlurbDisplay() {
+  const el = React.useRef(null);
+  const typed = React.useRef(null);
+
+  React.useEffect(() => {
+    const options = {
+      strings: ["Xin chào!", "Grüß Gott!", "Howdy!"],
+      typeSpeed: 50,
+      backSpeed: 50,
+    };
+
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      typed.current.destroy();
+    };
+  }, []);
   return (
     <div id="blurb-container">
       <div id="welcome-blurb" className="blurb">
-        <h1>Howdy!</h1>
+        <h1>
+          <span style={{ whiteSpace: "pre" }} ref={el} />
+        </h1>{" "}
         <br />
         <p>
           My name is <span className="highlight">Corrie Stroup</span>, I'm a
