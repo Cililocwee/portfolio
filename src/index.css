@@ -29,6 +29,10 @@
   --variable-padding-small: 0.5em;
   --padding-medium: 1em;
   --padding-large: 2em;
+
+  --font-main: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --font-flair: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 @media only screen and (min-width: 500px) {
@@ -82,4 +86,28 @@ h3,
 h4,
 h5 {
   color: var(--light-green);
+  font-family: var(--font-flair);
+}
+
+p {
+  font-family: var(--font-main);
+  color: var(--light-slate);
+}
+
+a {
+  color: var(--light-green);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--navy);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy);
 }

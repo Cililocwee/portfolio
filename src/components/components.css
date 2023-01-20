@@ -17,6 +17,7 @@
   height: 75px;
   object-fit: cover;
   transition: var(--scale-out);
+  cursor: pointer;
 }
 
 #profile-picture:hover {
@@ -65,6 +66,12 @@
   flex-direction: column;
   gap: 1em;
   padding-left: var(--padding-large);
+  font-family: var(--font-main);
+  color: var(--light-slate);
+}
+
+.project-blurb a {
+  color: var(--light-green);
 }
 
 .hidden {
@@ -111,6 +118,7 @@
     /* width: 185px; */
     width: 1fr;
     grid-column: 2;
+    width: 20em;
   }
 }
 

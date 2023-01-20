@@ -15,9 +15,19 @@ export default function SiteHeader({ visibilityToggle }) {
         alt=""
       />
       <div id="connect-box">
-        <img className="connect-icon" src={GHIcon} alt="" />
-        <img className="connect-icon" src={LIIcon} alt="" />
-        <img className="connect-icon" src={GMIcon} alt="" />
+        <a href="https://github.com/Cililocwee">
+          <img className="connect-icon" src={GHIcon} alt="github profile" />
+        </a>
+        <a href="https://www.linkedin.com/in/corriestroup/">
+          <img className="connect-icon" src={LIIcon} alt="linkedin profile" />
+        </a>
+        <a href="mailto:corrie.stroup@gmail.com">
+          <img
+            className="connect-icon"
+            src={GMIcon}
+            alt="email: corrie.stroup@gmail.com"
+          />
+        </a>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import projectList from "../projects/projectList";
 
 export default function ProjectMenu({ visibilityToggle }) {
   return (
@@ -7,25 +8,25 @@ export default function ProjectMenu({ visibilityToggle }) {
         className="decorated-anchor"
         onClick={() => visibilityToggle("project-one-blurb")}
       >
-        Project 1
+        <p>{projectList[0].projectTitle}</p>
       </a>
       <a
         className="decorated-anchor"
         onClick={() => visibilityToggle("project-two-blurb")}
       >
-        <p>Project 2</p>
+        <p>{projectList[1].projectTitle}</p>
       </a>
       <a
         className="decorated-anchor"
         onClick={() => visibilityToggle("project-three-blurb")}
       >
-        Project 3
+        <p>{projectList[2].projectTitle}</p>
       </a>
       <a
         className="decorated-anchor"
         onClick={() => visibilityToggle("project-four-blurb")}
       >
-        Project 4
+        <p>{projectList[3].projectTitle}</p>
       </a>
     </div>
   );
