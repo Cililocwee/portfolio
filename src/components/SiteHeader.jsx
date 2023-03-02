@@ -3,6 +3,7 @@ import ProfilePicture from "../assets/profilepicture.jpg";
 import GHIcon from "../assets/github.png";
 import LIIcon from "../assets/linkedin.png";
 import GMIcon from "../assets/gmail.png";
+import Blog from "../assets/blog.svg";
 import "./components.css";
 
 export default function SiteHeader({ visibilityToggle }) {
@@ -27,6 +28,9 @@ export default function SiteHeader({ visibilityToggle }) {
             src={GMIcon}
             alt="email: corrie.stroup@gmail.com"
           />
+        </a>
+        <a href="https://corries-devblog.web.app">
+          <img id="blog-icon" src={Blog} alt="github profile" />
         </a>
       </div>
     </div>

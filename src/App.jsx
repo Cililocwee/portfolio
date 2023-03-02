@@ -1,10 +1,8 @@
-import { useState } from "react";
 import "./App.css";
 import BackgroundLayer from "./components/BackgroundLayer";
 import BlurbDisplay from "./components/BlurbDisplay";
 import ProjectMenu from "./components/ProjectMenu";
 import SiteHeader from "./components/SiteHeader";
-import LavaLamp from "./lavalamp/LavaLamp";
 
 function App() {
   function displayBlurb(blurb) {
