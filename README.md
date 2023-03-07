@@ -14,7 +14,7 @@ To get started with the site, follow these steps:
 4. Create a new `.env` file in the root directory and add your Firebase project configuration details
 5. Start the development server using `npm run dev`
 
-You should now be able to view the site in your web browser at `http://localhost:3000/`.
+You should now be able to view the site in your web browser at `http://localhost:4200/`.
 
 ## Features
 
