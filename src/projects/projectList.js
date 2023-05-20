@@ -1,7 +1,12 @@
+import Blog from "../assets/blog.jpg";
+import Cafe from "../assets/cafe.jpg";
+import Movie from "../assets/movie.jpg";
+import Notstagram from "../assets/notstagram.jpg";
+
 const projectList = [
   {
     projectTitle: "Fullstack Blog App",
-    projectImg: "",
+    projectImg: Blog,
     projectLive: "https://corries-devblog.web.app",
     projectRepo: "https://github.com/Cililocwee/firebase-blog",
     projectDescription:
@@ -9,7 +14,7 @@ const projectList = [
   },
   {
     projectTitle: "Notstagram",
-    projectImg: "https://picsum.photos/200",
+    projectImg: Notstagram,
     projectLive: "https://notstagram-fcf48.web.app/#/",
     projectRepo: "https://github.com/Cililocwee/notstagram",
     projectDescription:
@@ -17,7 +22,7 @@ const projectList = [
   },
   {
     projectTitle: "Cafe Frontend",
-    projectImg: "https://picsum.photos/202",
+    projectImg: Cafe,
     projectLive: "https://cililocwee.github.io/store-front/",
     projectRepo: "https://github.com/Cililocwee/store-front",
     projectDescription:
@@ -25,7 +30,7 @@ const projectList = [
   },
   {
     projectTitle: "MovieHound",
-    projectImg: "https://picsum.photos/203",
+    projectImg: Movie,
     projectLive: "https://moviehound.web.app",
     projectRepo: "https://github.com/Cililocwee/movie_lookup",
     projectDescription:

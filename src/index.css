@@ -33,6 +33,8 @@
   --font-main: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-flair: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media only screen and (min-width: 500px) {

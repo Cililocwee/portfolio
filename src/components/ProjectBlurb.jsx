@@ -13,10 +13,10 @@ export default function ProjectBlurb({
         <h2>{projectTitle}</h2>
       </div>
       <div className="project-blurb">
-        <div className="project-description">{projectDescription}</div>
-        {/* <div className="project-img">
+        <div className="project-img">
           <img src={projectImg} alt="" />
-        </div> */}
+        </div>
+        <div className="project-description">{projectDescription}</div>
         <div className="project-links">
           <a className="decorated-anchor" href={projectLive}>
             Live

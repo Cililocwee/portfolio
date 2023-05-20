@@ -20,7 +20,7 @@
 
 #layout-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   background-color: var(--navy);
   z-index: 50;
   flex-grow: 1;

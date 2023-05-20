@@ -88,6 +88,12 @@
   color: var(--light-green);
 }
 
+.project-img img {
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
 .hidden {
   transform: scaleX(0);
   opacity: 0;
