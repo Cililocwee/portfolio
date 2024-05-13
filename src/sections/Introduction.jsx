@@ -3,7 +3,10 @@ import "./sections.css";
 export default function Introduction() {
   return (
     <div id="introduction" className="section">
-      <h1>Greetings!</h1>
+      <h1>
+        Building digital products <br /> Fostering engagement <br /> Reaching
+        new users
+      </h1>
       <p>
         My name is <span className="highlight">Corrie Stroup</span>, I'm a
         Frontend Developer based in Ho Chi Minh City, Vietnam. I have developed

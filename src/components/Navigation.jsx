@@ -4,7 +4,9 @@ import "./components.css";
 export default function Navigation() {
   return (
     <nav>
-      <a href="#">Corrie Stroup</a>
+      <h1>
+        <a href="#">Corrie Stroup</a>
+      </h1>
       <ul>
         <li>
           <a href="#">About</a>

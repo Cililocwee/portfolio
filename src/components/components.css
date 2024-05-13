@@ -1,6 +1,4 @@
 nav {
-  position: absolute;
-  top: 0;
   display: flex;
   width: 100%;
   background: black;
@@ -13,5 +11,9 @@ nav {
     display: flex;
     margin: auto;
     gap: 1.5em;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

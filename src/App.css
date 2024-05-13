@@ -1,7 +1,6 @@
 .App {
   background-color: var(--navy);
   color: var(--not-white);
-  padding: var(--variable-padding-small);
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
