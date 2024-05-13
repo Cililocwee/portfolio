@@ -124,4 +124,5 @@ nav {
   right: 1em;
   cursor: pointer;
   border-radius: 16px;
+  z-index: 100;
 }
