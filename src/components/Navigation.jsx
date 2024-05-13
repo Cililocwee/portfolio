@@ -2,6 +2,8 @@ import React from "react";
 import "./components.css";
 
 export default function Navigation() {
+  // !! Needs scrollintoview (gentle)
+
   return (
     <nav>
       <h1>
@@ -12,13 +14,13 @@ export default function Navigation() {
           <a href="#">About</a>
         </li>
         <li>
-          <a href="#">Recent Work</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>

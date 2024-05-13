@@ -1,21 +1,27 @@
 nav {
   display: flex;
-  width: 100%;
-  background: black;
+  width: auto;
+  max-width: 1080px;
+  background: var(--navy);
   padding: 1em;
+  z-index: 100;
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    margin: auto;
+    margin-left: auto;
     gap: 1.5em;
   }
 
   a {
     text-decoration: none;
   }
+}
+
+.section {
+  padding: 3em;
 }
 
 #hero {
@@ -107,4 +113,15 @@ nav {
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px);
   }
+}
+
+#return-to-top {
+  background-color: var(--light-green);
+  width: fit-content;
+  padding: 1em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  border-radius: 16px;
 }

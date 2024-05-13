@@ -2,18 +2,22 @@ import "./App.css";
 import Contact from "./components/Contact";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
+import ReturnToTopButton from "./components/ReturnToTopButton";
 import Skills from "./components/Skills";
-
-import Introduction from "./sections/Introduction";
+import Introduction from "./components/Introduction";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <Introduction />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div id="content">
+        <Introduction />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+
+      <ReturnToTopButton />
     </div>
   );
 }
