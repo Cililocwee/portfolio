@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ProjectBlurb from "./ProjectBlurb";
-import projectList from "../projects/projectList";
+import projectList from "../../projects/projectList";
 import Typed from "typed.js";
 
 export default function BlurbDisplay() {

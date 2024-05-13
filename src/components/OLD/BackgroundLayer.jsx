@@ -1,5 +1,5 @@
 import React from "react";
-import LavaLamp from "../lavalamp/LavaLamp";
+import LavaLamp from "../../lavalamp/LavaLamp";
 
 export default function BackgroundLayer({ position }) {
   if (position === "top") {

@@ -1,5 +1,5 @@
 import React from "react";
-import projectList from "../projects/projectList";
+import projectList from "../../projects/projectList";
 
 export default function ProjectMenu({ visibilityToggle }) {
   return (
