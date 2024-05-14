@@ -6,6 +6,7 @@ export default function Projects() {
   return (
     <div id="projects" className="section">
       <h2>Portfolio</h2>
+      <br />
 
       <div className="card-container">
         {projectList.map((project, index) => (
@@ -13,7 +14,9 @@ export default function Projects() {
             key={index}
             title={project.projectTitle}
             image={project.projectImg}
-            // description={project.projectDescription}
+            type={project.projectType}
+            live={project.projectLive}
+            github={project.projectRepo}
           />
         ))}
       </div>

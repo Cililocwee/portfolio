@@ -135,7 +135,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-
+  justify-content: center;
   /* border: 1px solid red; */
 }
 
@@ -191,5 +191,30 @@ nav {
     justify-content: space-evenly;
     margin-top: 0.5em;
     cursor: pointer;
+  }
+
+  .card-link {
+    text-decoration: none;
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-link {
+    width: 50px;
+  }
+
+  .contact-quick-links {
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1em;
   }
 }

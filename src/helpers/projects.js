@@ -6,6 +6,7 @@ import Notstagram from "../assets/notstagram.jpg";
 const projectList = [
   {
     projectTitle: "Fullstack Blog App",
+    projectType: "Portfolio",
     projectImg: Blog,
     projectLive: "https://corries-devblog.web.app",
     projectRepo: "https://github.com/Cililocwee/firebase-blog",
@@ -15,6 +16,7 @@ const projectList = [
   {
     projectTitle: "Notstagram",
     projectImg: Notstagram,
+    projectType: "Portfolio",
     projectLive: "https://notstagram-fcf48.web.app/#/",
     projectRepo: "https://github.com/Cililocwee/notstagram",
     projectDescription:
@@ -23,6 +25,7 @@ const projectList = [
   {
     projectTitle: "Cafe Frontend",
     projectImg: Cafe,
+    projectType: "Portfolio",
     projectLive: "https://cililocwee.github.io/store-front/",
     projectRepo: "https://github.com/Cililocwee/store-front",
     projectDescription:
@@ -31,6 +34,7 @@ const projectList = [
   {
     projectTitle: "MovieHound",
     projectImg: Movie,
+    projectType: "Landing Page",
     projectLive: "https://moviehound.web.app",
     projectRepo: "https://github.com/Cililocwee/movie_lookup",
     projectDescription:
