@@ -1,17 +1,19 @@
 import React from "react";
 import "./components.css";
 
-export default function ProjectCard({ title, image, description }) {
+export default function ProjectCard({ type, image, title, live, github }) {
   return (
     <div className="card">
-      <div className="card-title">{title}</div>
-      <div className="card-image-container">
-        <img src={image} alt={title} className="card-image" />
+      <div className="card-type">{type ? <p>{type}</p> : <p>Portfolio</p>}</div>
+      <div
+        className="card-image-container"
+        style={{ backgroundImage: `url(${image})` }}
+      >
+        <div className="card-image-title">{title}</div>
       </div>
-      <div className="card-description">{description}</div>
-      <div className="card-link-container">
-        <a href="#projects">Live</a>
-        <a href="#projects">Github</a>
+      <div className="card-links">
+        <a href={live}>Live</a>
+        <a href={github}>Github</a>
       </div>
     </div>
   );
