@@ -1,4 +1,6 @@
 import React from "react";
+import projectList from "../helpers/projects";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
@@ -13,6 +15,16 @@ export default function Projects() {
         felis. Aenean scelerisque nisi sed lorem porttitor, vitae elementum
         velit convallis.
       </p>
+      <div className="card-container">
+        {projectList.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.projectTitle}
+            image={project.projectImg}
+            description={project.projectDescription}
+          />
+        ))}
+      </div>
     </div>
   );
 }

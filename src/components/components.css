@@ -2,9 +2,11 @@ nav {
   display: flex;
   width: auto;
   max-width: 1080px;
-  background: var(--navy);
+  background: var(--content);
   padding: 1em;
   z-index: 100;
+  border-radius: 0.75em 0.75em 0 0;
+  margin-top: 0.5em;
 
   ul {
     list-style-type: none;
@@ -13,6 +15,7 @@ nav {
     display: flex;
     margin-left: auto;
     gap: 1.5em;
+    align-items: center;
   }
 
   a {
@@ -22,6 +25,7 @@ nav {
 
 .section {
   padding: 3em;
+  border-top: 2px solid var(--dark-bg);
 }
 
 #hero {
@@ -125,4 +129,59 @@ nav {
   cursor: pointer;
   border-radius: 16px;
   z-index: 100;
+}
+
+.card-container {
+  /* border: 3px solid cyan; */
+  display: flex;
+  overflow: auto;
+  /* gap: 1em; */
+}
+
+.card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  gap: 0.5em;
+  padding: 1em;
+  border: 1px solid var(--not-white);
+
+  .card-title {
+    text-align: center;
+    margin: 0.5em;
+  }
+
+  .card-link-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+
+      border: 2px solid var(--light-green);
+      padding: 0.5em 1em;
+      border-radius: 0.5em;
+      background-color: var(--navy);
+      transition: ease-out;
+    }
+
+    a:hover {
+      background-color: var(--light-green);
+      color: var(--navy);
+      transform: translateY(-5%);
+      transition: ease-in;
+    }
+  }
+
+  /* debugging */
+  /* background-color: red; */
+  /* border: 3px solid yellow; */
+  border-radius: 8px;
+
+  img {
+    max-width: 300px;
+  }
 }

@@ -15,6 +15,17 @@
   --lightest-slate: #ccd6f6;
   --green-tint: rgba(100, 255, 218, 0.1);
 
+  /* Color palette redo */
+  --dark-bg: #0a192f;
+  --content: #15335f;
+
+  --darker-text: #a8b2d1;
+  --lighter-text: #d1d1d1;
+  --active-text: #64ffda;
+
+  --highlight: #64ffda;
+  /* End color palette redo */
+
   --linear-gradient: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.8),
@@ -67,7 +78,8 @@ body,
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  background-color: var(--navy);
+  background-color: var(--dark-bg);
+
   height: fit-content;
   /* overflow: hidden; */
 }
@@ -87,17 +99,17 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--light-green);
+  color: var(--highlight);
   font-family: var(--font-flair);
 }
 
 p {
   font-family: var(--font-main);
-  color: var(--light-slate);
+  color: var(--darker-text);
 }
 
 a {
-  color: var(--light-green);
+  color: var(--highlight);
 }
 
 ::-webkit-scrollbar {
@@ -105,11 +117,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--dark-slate);
-  border: 3px solid var(--navy);
+  background-color: var(--dark-bg);
+  border: 3px solid var(--content);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navy);
+  background: var(--dark-bg);
+  border-radius: 16px;
 }
