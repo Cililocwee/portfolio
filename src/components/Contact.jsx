@@ -19,13 +19,17 @@ export default function Contact() {
 
       <div className="contact-links">
         <a href="http://www.github.com/cililocwee" target="_blank">
-          <img src={Github} alt="Github Link" className="contact-link" />
+          <img src={Github} alt="Github Link" className="contact-link bouncy" />
         </a>
         <a href="https://www.linkedin.com/in/corriestroup/" target="_blank">
-          <img src={LinkedIn} alt="Linkedin Link" className="contact-link" />
+          <img
+            src={LinkedIn}
+            alt="Linkedin Link"
+            className="contact-link bouncy"
+          />
         </a>
         <a href="mailto:corrie.stroup@gmail.com">
-          <img src={Email} alt="Email Link" className="contact-link" />
+          <img src={Email} alt="Email Link" className="contact-link bouncy" />
         </a>
       </div>
     </div>

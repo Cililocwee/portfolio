@@ -12,8 +12,8 @@ function App() {
       <Navigation />
       <div id="content">
         <Introduction />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
       </div>
 

@@ -1,10 +1,14 @@
 import React from "react";
 
 export default function IntroductionButtons() {
+  const scrollToBottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   return (
     <div id="introduction-buttons">
-      <button className="button-30">Contact Me</button>
-      {/* <button className="button-30">Download CV</button> */}
+      <button className="button-30" onClick={scrollToBottom}>
+        Contact Me
+      </button>
     </div>
   );
 }
