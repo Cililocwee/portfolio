@@ -17,39 +17,20 @@ import UbuntuIcon from "../assets/skills/ubuntu.svg";
 
 export default function Skills() {
   const icons = [
-    AngularIcon,
-    DockerIcon,
-    GitIcon,
-    JavaIcon,
     JavascriptIcon,
+    TypescriptIcon,
+    ReactJSIcon,
+    PythonIcon,
+    DockerIcon,
+    AngularIcon,
+    JavaIcon,
     MongoIcon,
+    PhpIcon,
+    SassIcon,
+    UbuntuIcon,
+    GitIcon,
     MysqlIcon,
     NodeIcon,
-    PhpIcon,
-    PythonIcon,
-    ReactJSIcon,
-    SassIcon,
-    TypescriptIcon,
-    UbuntuIcon,
-  ];
-
-  const iconsTop = [
-    AngularIcon,
-    DockerIcon,
-    GitIcon,
-    JavaIcon,
-    JavascriptIcon,
-    MongoIcon,
-    MysqlIcon,
-  ];
-  const iconsBottom = [
-    NodeIcon,
-    PhpIcon,
-    PythonIcon,
-    ReactJSIcon,
-    SassIcon,
-    TypescriptIcon,
-    UbuntuIcon,
   ];
 
   return (

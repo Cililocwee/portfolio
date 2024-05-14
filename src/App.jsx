@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import ReturnToTopButton from "./components/ReturnToTopButton";
 import Skills from "./components/Skills";
 import Introduction from "./components/Introduction";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Skills />
         <Contact />
       </div>
-
+      <Footer />
       <ReturnToTopButton />
     </div>
   );

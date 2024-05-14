@@ -23,6 +23,19 @@ nav {
   }
 }
 
+footer {
+  padding: 1.5em 3em;
+  border-top: 2px solid var(--dark-bg);
+  margin-top: 1em;
+
+  background-color: var(--content);
+  border-radius: 0 0 0.75em 0.75em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .section {
   padding: 3em;
   border-top: 2px solid var(--dark-bg);
