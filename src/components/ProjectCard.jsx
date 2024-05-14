@@ -12,12 +12,16 @@ export default function ProjectCard({ type, image, title, live, github }) {
         <div className="card-image-title">{title}</div>
       </div>
       <div className="card-links">
-        <a href={live} className="card-link" target="_blank">
-          Live
-        </a>
-        <a href={github} className="card-link" target="_blank">
-          Github
-        </a>
+        {live != "#" && (
+          <a href={live} className="card-link" target="_blank">
+            Live
+          </a>
+        )}
+        {github != "#" && (
+          <a href={github} className="card-link" target="_blank">
+            Github
+          </a>
+        )}
       </div>
     </div>
   );

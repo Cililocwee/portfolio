@@ -2,8 +2,6 @@ import React from "react";
 import "./components.css";
 
 export default function Navigation() {
-  // !! Needs scrollintoview (gentle)
-
   return (
     <nav>
       <h1>

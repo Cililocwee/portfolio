@@ -2,11 +2,42 @@ import Blog from "../assets/blog.jpg";
 import Cafe from "../assets/cafe.jpg";
 import Movie from "../assets/movie.jpg";
 import Notstagram from "../assets/notstagram.jpg";
+import Gamecows from "../assets/gamecows.png";
+import Seek from "../assets/seekandfind.png";
+import Rade from "../assets/rade_icon.png";
 
 const projectList = [
   {
-    projectTitle: "Fullstack Blog App",
-    projectType: "Portfolio",
+    projectTitle: "Game Cows",
+    projectImg: Gamecows,
+    projectType: "Website",
+    projectLive: "https://www.gamecows.com",
+    projectRepo: "#",
+    projectDescription:
+      "Game Cows is a content-based WordPress site that publishes new D&D articles daily. I created the theme for this website based on Mediavine's Trellis to integrate the client's Mediavine account.",
+  },
+  {
+    projectTitle: "Seek and Find",
+    projectImg: Seek,
+    projectType: "Web Application",
+    projectLive: "https://seek-and-find.web.app/",
+    projectRepo: "https://github.com/Cililocwee/hidden-objects",
+    projectDescription:
+      "Seek and Find is a simple proof-of-concept language learning tool I developed to help young ELLs to have a fun way to practice vocabulary.",
+  },
+
+  {
+    projectTitle: "Rade Keyboard",
+    projectImg: Rade,
+    projectType: "Android App",
+    projectLive: "#",
+    projectRepo: "https://github.com/Cililocwee/ethnickeyboard",
+    projectDescription:
+      "This Rade Keyboard was made to be used by the local Rade/Ede community because many of the keyboards on Google Play don't support their unique alphabet features.",
+  },
+  {
+    projectTitle: "Devblog",
+    projectType: "Blog",
     projectImg: Blog,
     projectLive: "https://corries-devblog.web.app",
     projectRepo: "https://github.com/Cililocwee/firebase-blog",
@@ -23,7 +54,7 @@ const projectList = [
       "I developed Notstagram, a feature-rich Instagram clone that enables users to browse and discover new photo content. The application features a main feed and an explore tool, mirroring the functionality of the Discover feature on Instagram's robust social media platform. The stack I utilized consists of Firebase on the backend, and ReactJS/Typescript on the frontend, enabling the development of performant and interactive user interfaces. This project showcases my technical expertise in building web applications and my ability to implement complex features on a modern technology stack.",
   },
   {
-    projectTitle: "Cafe Frontend",
+    projectTitle: "Star Hill Place",
     projectImg: Cafe,
     projectType: "Portfolio",
     projectLive: "https://cililocwee.github.io/store-front/",
@@ -34,7 +65,7 @@ const projectList = [
   {
     projectTitle: "MovieHound",
     projectImg: Movie,
-    projectType: "Landing Page",
+    projectType: "Portfolio",
     projectLive: "https://moviehound.web.app",
     projectRepo: "https://github.com/Cililocwee/movie_lookup",
     projectDescription:
