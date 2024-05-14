@@ -8,13 +8,14 @@ export default function Hero() {
     <div id="hero">
       <div id="headline">
         <h1>
-          Building digital products <br /> Fostering engagement <br /> Reaching
-          new users
+          Making momentum <br /> Building solutions <br /> Reaching new users
         </h1>
+
+        <h2>Hey there, I'm Corrie!</h2>
         <p>
-          A Full Stack Developer based in Vietnam. I specialize in distilling
-          your particular needs and producing quick results that get your
-          business noticed. From custom websites to applications, from
+          I'm a Full Stack Developer based in Vietnam. I specialize in
+          distilling your particular needs and producing quick results that get
+          your business noticed. From custom websites to applications, from
           optimizing your SEO to updating legacy code, I've got your covered.
         </p>
         <IntroductionButtons />

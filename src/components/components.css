@@ -1,12 +1,15 @@
+/* semantic */
 nav {
   display: flex;
   width: auto;
   max-width: 1080px;
   background: var(--content);
-  padding: 1em;
+  padding: 0.75em;
   z-index: 100;
   border-radius: 0.75em 0.75em 0 0;
   margin-top: 0.5em;
+  font-family: var(--font-flair);
+  font-weight: bold;
 
   ul {
     list-style-type: none;
@@ -16,6 +19,17 @@ nav {
     margin-left: auto;
     gap: 1.5em;
     align-items: center;
+  }
+
+  .nav-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  img {
+    width: 75px;
+    object-fit: contain;
   }
 
   a {
@@ -33,9 +47,14 @@ footer {
   margin-bottom: 0.5em;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
+small {
+  font-family: var(--font-flair);
+}
+
+/* components */
 .section {
   padding: 3em;
   border-top: 2px solid var(--dark-bg);
@@ -45,11 +64,14 @@ footer {
 
 #hero {
   display: flex;
+  margin: auto;
+  max-width: 800px;
 
   #headline {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    margin-right: 3em;
   }
 
   #profile-picture {
@@ -57,6 +79,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
 
     small {
       margin-left: auto;
@@ -135,14 +158,19 @@ footer {
 
 #return-to-top {
   background-color: var(--light-green);
-  width: fit-content;
-  padding: 1em;
+  width: 50px;
   position: fixed;
   bottom: 1em;
   right: 1em;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 50em;
   z-index: 100;
+  transition: 0.5s;
+
+  &:hover {
+    filter: invert();
+    transition: 0.5s;
+  }
 }
 
 .card-container {
@@ -199,6 +227,7 @@ footer {
     width: 100%;
     color: var(--white);
     background-color: #36395aaa;
+    font-family: var(--font-main);
   }
 
   .card-links {
@@ -210,6 +239,7 @@ footer {
 
   .card-link {
     text-decoration: none;
+    font-family: var(--font-main);
   }
 }
 
@@ -246,6 +276,60 @@ footer {
   }
 }
 
+/* Utility Classes */
+
 .bouncy:hover {
   transform: scale(1.05);
+}
+
+.invert {
+  filter: invert(45%) sepia(13%) saturate(1155%) hue-rotate(180deg)
+    brightness(93%) contrast(87%);
+  transition: 0.25s;
+}
+
+.invert:hover {
+  filter: invert(100%) sepia(13%) saturate(1155%) hue-rotate(180deg)
+    brightness(93%) contrast(87%);
+}
+
+.highlight {
+  color: var(--highlight);
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+
+  .section {
+    padding: 2em 1em;
+  }
+
+  #hero {
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    h1 {
+      color: var(--highlight);
+    }
+    #headline {
+      gap: 0.5em;
+      margin-right: 0;
+    }
+  }
+
+  #introduction-buttons {
+    margin-top: 2em;
+  }
+
+  .card {
+    width: 150px;
+    height: 200px;
+  }
+
+  #contact,
+  footer {
+    text-align: center;
+  }
 }

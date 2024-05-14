@@ -6,7 +6,7 @@ import Email from "../assets/gmail.png";
 export default function Contact() {
   return (
     <div id="contact" className="section">
-      <h2>Let's connect!</h2>
+      <h2 className="highlight">Let's connect!</h2>
       <p>I want to work with you to make something amazing!</p>
 
       <div className="contact-quick-links">
@@ -19,17 +19,25 @@ export default function Contact() {
 
       <div className="contact-links">
         <a href="http://www.github.com/cililocwee" target="_blank">
-          <img src={Github} alt="Github Link" className="contact-link bouncy" />
+          <img
+            src={Github}
+            alt="Github Link"
+            className="contact-link bouncy invert"
+          />
         </a>
         <a href="https://www.linkedin.com/in/corriestroup/" target="_blank">
           <img
             src={LinkedIn}
             alt="Linkedin Link"
-            className="contact-link bouncy"
+            className="contact-link bouncy invert"
           />
         </a>
         <a href="mailto:corrie.stroup@gmail.com">
-          <img src={Email} alt="Email Link" className="contact-link bouncy" />
+          <img
+            src={Email}
+            alt="Email Link"
+            className="contact-link bouncy invert"
+          />
         </a>
       </div>
     </div>

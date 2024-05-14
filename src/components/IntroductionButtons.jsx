@@ -7,7 +7,7 @@ export default function IntroductionButtons() {
   return (
     <div id="introduction-buttons">
       <button className="button-30" onClick={scrollToBottom}>
-        Contact Me
+        Get in touch
       </button>
     </div>
   );
