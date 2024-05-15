@@ -6,6 +6,7 @@ import ReturnToTopButton from "./components/ReturnToTopButton";
 import Skills from "./components/Skills";
 import Introduction from "./components/Introduction";
 import Footer from "./components/Footer";
+import MobileNavigation from "./components/MobileNavigation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </div>
       <Footer />
       <ReturnToTopButton />
+      <MobileNavigation />
     </div>
   );
 }

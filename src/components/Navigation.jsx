@@ -12,7 +12,6 @@ export default function Navigation() {
         </div>
       </a>
 
-      <div className="mobile-nav">{/* Needs to be added */}</div>
       <ul>
         <li>
           <a href="#">About</a>

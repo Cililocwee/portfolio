@@ -10,10 +10,6 @@ export default function ReturnToTopButton() {
   };
 
   return (
-    // <button id="return-to-top" onClick={scrollToTop}>
-    //   Top
-    // </button>
-
     <img
       src={ReturnToTop}
       alt="return"
