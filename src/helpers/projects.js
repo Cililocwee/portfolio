@@ -1,10 +1,10 @@
-import Blog from "../assets/blog.jpg";
-import Cafe from "../assets/cafe.jpg";
-import Movie from "../assets/movie.jpg";
-import Notstagram from "../assets/notstagram.jpg";
-import Gamecows from "../assets/gamecows.png";
-import Seek from "../assets/seekandfind.png";
-import Rade from "../assets/rade_icon.png";
+import Blog from "../assets/projects/blog.jpg";
+import Cafe from "../assets/projects/cafe.jpg";
+import Movie from "../assets/projects/movie.jpg";
+import Notstagram from "../assets/projects/notstagram.jpg";
+import Gamecows from "../assets/projects/gamecows.png";
+import Seek from "../assets/projects/seekandfind.png";
+import Rade from "../assets/projects/rade_icon.png";
 
 const projectList = [
   {
