@@ -4,12 +4,13 @@ nav {
   width: auto;
   max-width: 1080px;
   background: var(--content);
-  padding: 0.75em;
+  padding: 0.75em 2em;
   z-index: 100;
   border-radius: 0.75em 0.75em 0 0;
   margin-top: 0.5em;
   font-family: var(--font-flair);
   font-weight: bold;
+  font-size: large;
   position: relative;
 
   ul {
