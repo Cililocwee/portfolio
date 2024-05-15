@@ -1,15 +1,13 @@
 .App {
-  background-color: var(--navy);
   color: var(--not-white);
-  padding: var(--variable-padding-small);
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1080px;
   height: fit-content;
+  z-index: 10;
 }
 
 #page-container {
@@ -18,13 +16,20 @@
   flex-direction: column;
 }
 
-#layout-container {
+/* #layout-container {
   display: flex;
   flex-direction: column-reverse;
   background-color: var(--navy);
   z-index: 50;
   flex-grow: 1;
   align-items: center;
+} */
+
+#content {
+  background-color: var(--dark-bg);
+  max-width: 1080px;
+  width: 100%;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 700px) {
@@ -32,16 +37,17 @@
     height: 100%;
   }
 
-  #layout-container {
+  /* #layout-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
     height: 100%;
     flex-grow: 1;
-  }
+  } */
 }
 
-#footer {
+/* UNUSED */
+/* #footer {
   text-align: right;
   width: 100%;
   z-index: 50;
@@ -59,4 +65,4 @@
   cursor: pointer;
   border-bottom: 3px solid var(--light-green);
   padding-bottom: 0.5em;
-}
+} */
