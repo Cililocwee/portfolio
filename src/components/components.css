@@ -6,8 +6,7 @@ nav {
   background: var(--content);
   padding: 0.75em 2em;
   z-index: 100;
-  border-radius: 0.75em 0.75em 0 0;
-  margin-top: 0.5em;
+  /* margin-top: 0.5em; */
   font-family: var(--font-flair);
   font-weight: bold;
   font-size: large;
@@ -21,6 +20,10 @@ nav {
     margin-left: auto;
     gap: 1.5em;
     align-items: center;
+
+    li a {
+      color: var(--lighter-text);
+    }
   }
 
   .nav-banner {
@@ -44,7 +47,7 @@ footer {
   border-top: 2px solid var(--dark-bg);
   margin-top: 1em;
 
-  background-color: var(--content);
+  /* background-color: var(--content); */
   border-radius: 0 0 0.75em 0.75em;
   margin-bottom: 0.5em;
   display: flex;
@@ -52,15 +55,12 @@ footer {
   /* align-items: flex-end; */
 }
 
-small {
-  font-family: var(--font-flair);
-}
-
 /* components */
 .section {
   padding: 3em;
   border-top: 2px solid var(--dark-bg);
-  margin-top: 1em;
+  border-radius: 16px;
+  margin: 1.5em;
   background-color: var(--content);
 }
 
@@ -87,6 +87,8 @@ small {
       margin-left: auto;
       text-align: right;
       padding-bottom: 1em;
+      font-family: var(--font-flair);
+      color: var(--darker-text);
     }
 
     img {
@@ -187,12 +189,8 @@ small {
 .card {
   width: 200px;
   height: 250px;
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
-
-  /* background: red; */
-  /* border: 2px solid red; */
 
   .card-type p {
     color: var(--lighter-text);
@@ -208,10 +206,8 @@ small {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* overflow: hidden; */
     position: relative;
     border-radius: 8px;
-
     display: flex;
     transition: 0.5s;
   }
@@ -227,7 +223,7 @@ small {
     margin-top: auto;
     padding: 0.5em;
     width: 100%;
-    color: var(--white);
+    color: var(--lighter-text);
     background-color: #36395aaa;
     font-family: var(--font-main);
   }
@@ -276,27 +272,6 @@ small {
   h2 {
     margin-bottom: 1em;
   }
-}
-
-/* Utility Classes */
-
-.bouncy:hover {
-  transform: scale(1.05);
-}
-
-.invert {
-  filter: invert(45%) sepia(13%) saturate(1155%) hue-rotate(180deg)
-    brightness(93%) contrast(87%);
-  transition: 0.25s;
-}
-
-.invert:hover {
-  filter: invert(100%) sepia(13%) saturate(1155%) hue-rotate(180deg)
-    brightness(93%) contrast(87%);
-}
-
-.highlight {
-  color: var(--highlight);
 }
 
 #hamburger {
@@ -369,6 +344,27 @@ small {
   }
 }
 
+/* Utility Classes */
+
+.bouncy:hover {
+  transform: scale(1.05);
+}
+
+.invert {
+  filter: invert(45%) sepia(13%) saturate(1155%) hue-rotate(180deg)
+    brightness(93%) contrast(87%);
+  transition: 0.25s;
+}
+
+.invert:hover {
+  filter: invert(100%) sepia(13%) saturate(1155%) hue-rotate(180deg)
+    brightness(93%) contrast(87%);
+}
+
+.highlight {
+  color: var(--highlight);
+}
+
 @media (max-width: 600px) {
   nav ul {
     display: none;
@@ -376,6 +372,7 @@ small {
 
   .section {
     padding: 2em 1em;
+    margin: 1.5em 0 0 0;
   }
 
   #hero {

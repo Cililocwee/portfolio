@@ -1,64 +1,20 @@
 :root {
-  /* SOON TO BE REMOVED */
-  --navy: #0a192f;
-  --light-green: #64ffda;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --white: #e6f1ff;
-  --not-white: #d1d1d1;
-  --border-radius: 6px;
+  /* Color palette */
 
-  --dark-navy: #020c1b;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --dark-slate: #495670;
-  --lightest-slate: #ccd6f6;
-  --green-tint: rgba(100, 255, 218, 0.1);
-
-  /* Color palette redo */
-  --dark-bg: #0a192f;
-  --content: #15335f;
+  --dark-bg: #000000;
+  --content: #1d2226;
 
   --darker-text: #a8b2d1;
-  --lighter-text: #d1d1d1;
+  --lighter-text: #e9e9e9;
   --active-text: #64ffda;
 
   --highlight: #64ffda;
-  /* End color palette redo */
-
-  --linear-gradient: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-
-  --scale-in: 0.3s;
-  --scale-out: 0.75s;
-
-  --variable-padding-small: 0.5em;
-  --padding-medium: 1em;
-  --padding-large: 2em;
 
   --font-main: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-flair: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
   -webkit-tap-highlight-color: transparent;
-}
-
-@media only screen and (min-width: 500px) {
-  :root {
-    --variable-padding-small: 1em;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  :root {
-    --variable-padding-small: 2em;
-  }
 }
 
 html {
