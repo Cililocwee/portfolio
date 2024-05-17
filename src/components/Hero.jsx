@@ -16,7 +16,7 @@ export default function Hero() {
           I'm a Full Stack Developer based in Vietnam. I specialize in
           distilling your particular needs and producing quick results that get
           your business noticed. From custom websites to applications, from
-          optimizing your SEO to updating legacy code, I've got your covered.
+          optimizing your SEO to updating legacy code, I've got you covered.
         </p>
         <IntroductionButtons />
       </div>
