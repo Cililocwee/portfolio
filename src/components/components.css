@@ -282,7 +282,7 @@ footer {
 
 #mobile-navigation {
   position: fixed;
-  top: 2em;
+  top: 1em;
   right: 0;
   z-index: 100;
   background-color: var(--dark-bg);
@@ -366,8 +366,23 @@ footer {
 }
 
 @media (max-width: 600px) {
-  nav ul {
-    display: none;
+  nav {
+    padding: 1em;
+
+    .nav-banner {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    img {
+      width: 50px;
+      object-fit: contain;
+    }
+
+    ul {
+      display: none;
+    }
   }
 
   .section {
