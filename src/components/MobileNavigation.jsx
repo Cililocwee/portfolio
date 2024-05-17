@@ -4,9 +4,10 @@ import { Rotate as Hamburger } from "hamburger-react";
 export default function MobileNavigation() {
   const [isOpen, setOpen] = useState(false);
 
-  const menu = document.getElementById("mobile-navigation-screen");
+  // const menu = document.getElementById("mobile-navigation-screen");
 
   const handleToggle = (toggled) => {
+    const menu = document.getElementById("mobile-navigation-screen");
     if (toggled) {
       menu.style.transform = "translateX(0)";
     } else {
@@ -17,6 +18,7 @@ export default function MobileNavigation() {
   };
 
   const handleClose = (e) => {
+    const menu = document.getElementById("mobile-navigation-screen");
     // e.stopPropagation();
     menu.style.transform = "translateX(100%)";
     setOpen(false);
