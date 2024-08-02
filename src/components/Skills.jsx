@@ -14,19 +14,20 @@ import ReactJSIcon from "../assets/skills/react.svg";
 import SassIcon from "../assets/skills/sass.svg";
 import TypescriptIcon from "../assets/skills/typescript.svg";
 import UbuntuIcon from "../assets/skills/ubuntu.svg";
+import WordPressIcon from "../assets/skills/wordpress.svg";
 
 export default function Skills() {
   const icons = [
     JavascriptIcon,
     TypescriptIcon,
     ReactJSIcon,
+    WordPressIcon,
     PythonIcon,
     DockerIcon,
     AngularIcon,
     JavaIcon,
     MongoIcon,
     PhpIcon,
-    SassIcon,
     UbuntuIcon,
     GitIcon,
     MysqlIcon,
